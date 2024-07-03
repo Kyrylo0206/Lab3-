@@ -31,3 +31,8 @@ print("\nВідновлена матриця A:")
 print(A_reconstructed)
 
 print("\nЧи близька відновлена матриця до початкової:", np.allclose(A, A_reconstructed))
+
+reconstructed_check = np.dot(U, np.dot(Sigma, Vt))
+print("\nВідновлена матриця шляхом множення U, Σ та V^T:")
+print(reconstructed_check)
+print("\nЧи близька відновлена матриця шляхом множення до початкової:", np.allclose(A, reconstructed_check))
