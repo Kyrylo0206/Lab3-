@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 from scipy.sparse.linalg import svds
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 
 ratings_file_path = 'ratings.csv'
 ratings_df = pd.read_csv(ratings_file_path)
